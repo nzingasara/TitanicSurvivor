@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.Bucketizer","timestamp":1543518545958,"sparkVersion":"2.4.0","uid":"bucketizer_cde2fded1de4","paramMap":{"splits":[0.0,50.0,100.0,150.0,200.0,"Inf"],"inputCol":"Fare","outputCol":"FareBucket"},"defaultParamMap":{"handleInvalid":"error","outputCol":"bucketizer_cde2fded1de4__output"}}

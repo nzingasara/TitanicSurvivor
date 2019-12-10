@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Titanic Survivor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" style="text-align:center">
+  <div class="page-header" style="padding: 80px; border: 2px solid #2D2D2D; margin: 1px 0px; text-align: center;">
+    <h1 style="margin: 0 auto; background: #2D2D2D; color: white; padding: 20px; display: inline-block;">Titanic Survivor</h1>     
+  </div>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="/data">Data</a></li>
+        <li><a href="#">Team</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <img src="https://t4.ftcdn.net/jpg/02/15/84/43/240_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" class="img-thumnail img-rounded" style="width: 200px; height: 200px; object-fit: cover; margin: 20px;">
+  
+  <form action="/data" method="post" enctype="multipart/form-data" >
+    <h2 style="margin-bottom: 30px">
+      <input style="width: 50%; margin: auto;" type="text" class="form-control" name="name" placeholder="Name">
+    </h2>
+
+    <table class="table table-striped" style="margin-bottom: 30px;">
+      <tr><th>Passenger #</th><th>Ticket Class</th><th>Sex</th><th>Age</th><th>Sibling & Spouse</th><th>Parents & Children</th><th>Ticket #</th><th>Passenger Fare</th><th>Cabin #</th><th>Port of Embarkation</th></tr>
+
+      <tr style="text-align: left">
+        <td><input style="margin: auto;" type="text" class="form-control" name="pid"></td>
+        <td><input style="margin: auto;" type="text" class="form-control" name="pclass"></td>
+        <td><input style="margin: auto;" type="text" class="form-control" name="sex"></td>
+        <td><input style="margin: auto;" type="text" class="form-control" name="age"></td>
+        <td><input style="margin: auto;" type="text" class="form-control" name="sibsp"></td>
+        <td><input style="margin: auto;" type="text" class="form-control" name="parch"></td>
+        <td><input style="margin: auto;" type="text" class="form-control" name="ticket"></td>
+        <td><input style="margin: auto;" type="text" class="form-control" name="fare"></td>
+        <td><input style="margin: auto;" type="text" class="form-control" name="cabin"></td>
+        <td><input style="margin: auto;" type="text" class="form-control" name="embarked"></td>
+      </tr>
+    </table>
+
+    <button type="submit" id="btnsubmit" class="btn btn-default">Submit</button>
+  </form>
+
+</div>
+
+</body>
+</html>
